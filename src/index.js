@@ -1,5 +1,10 @@
-function handleTriangleForm() {
-  event.preventDefault();
+import Triangle from './triangle.js';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
+
+function handleTriangleForm(e) {
+  e.preventDefault();
   document.querySelector('#response').innerText = null;
   const length2 = parseInt(document.querySelector('#length2').value);
   const length1 = parseInt(document.querySelector('#length1').value);
