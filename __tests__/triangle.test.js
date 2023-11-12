@@ -28,6 +28,16 @@ describe('Triangle', () => {
     const equiTriangle = new Triangle(5, 5, 5)
     expect(equiTriangle.checkType()).toEqual("equilateral triangle");
   });
+
+  test('should say if a triangle is big', () => {
+    const triangle = new Triangle(3, 4, 5);
+    expect(triangle.bigOrLittle()).toEqual('big');
+  });
+
+  test('should say if a triangle is little', () => {
+    const triangle = new Triangle(2, 4, 1);
+    expect(triangle.bigOrLittle()).toEqual('little');
+  });
 });
 /* edgecases to consider:
     What happens if words or arrays are passed into the constructor?
