@@ -14,7 +14,7 @@ export default class Triangle {
     } else {
       return "isosceles triangle";
     }
-  };
+  }
   bigOrLittle() {
     const sum = this.side1 + this.side2 + this.side3;
     if (sum > 10) {
@@ -22,7 +22,7 @@ export default class Triangle {
     } else {
       return 'little';
     }
-  };
+  }
 }
 
 
